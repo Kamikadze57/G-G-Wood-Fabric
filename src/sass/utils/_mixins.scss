@@ -1,0 +1,7 @@
+@mixin flex-basis($gap, $count-items) {
+  flex-basis: calc((100% - $gap * (#{$count-items} - 1)) / #{$count-items});
+}
+@mixin flex($gap) {
+  display: flex;
+  gap: $gap;
+}

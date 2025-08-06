@@ -1,0 +1,33 @@
+.footer {
+  padding: 80px 0;
+  // background-image: url('/images/footer-bg.png');
+//   background: url("/images/footer-left.svg") no-repeat 10% center, url("/images/footer-right.svg") no-repeat 90% center, $bg-primary;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__box {
+    display: flex;
+    flex-direction: column;
+}
+.info__box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.footer__text {
+    color: $text-tertiary;
+    font-size: 13px;
+}
+.footer-adress__phone {
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+.footer__phone {
+    font-size: 25px;
+    color: $text-secondary;
+    letter-spacing: -2px;
+
+}

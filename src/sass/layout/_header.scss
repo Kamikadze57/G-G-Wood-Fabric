@@ -1,0 +1,55 @@
+.header {
+  padding: 20px 0;
+  background-color: $bg-primary;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__svg {
+  max-width: 106px;
+  max-height: 60px;
+}
+.nav__list {
+  display: flex;
+  gap: 36px;
+}
+.nav__link {
+  color: $text-secondary;
+  transition: color $normal;
+  font-size: 16px;
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
+}
+.header__contacts {
+  display: flex;
+  gap: 72px;
+}
+.header-contacts__link {
+  color: $secondary-color;
+  font-size: 16px;
+  transition: color $normal;
+  &:hover, &:focus {
+    color: $text-secondary;
+  }
+}
+.header-contacts__phone {
+  font-size: 20px;
+  font-weight: 700;
+}
+.header-catalog__btn {
+  padding: 13px 26px;
+  font-size: 13px;
+}
+
+
+
+.header-menu__container {
+  display: none;
+}
+.menu-btn__box {
+  display: none;
+}

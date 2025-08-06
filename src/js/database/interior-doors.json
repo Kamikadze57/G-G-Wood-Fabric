@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Sofia Original 50.07",
+    "photo": "",
+    "price": "24 500 грн",
+    "characteristics": {
+      "leaf_width": "800 мм",
+      "leaf_height": "2000 мм",
+      "double_leaf": "Ні",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Compack", "Пентал", "Купе"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "VISION Модель 64.43",
+    "photo": "",
+    "price": "25 100 грн",
+    "characteristics": {
+      "leaf_width": "700 мм",
+      "leaf_height": "2100 мм",
+      "double_leaf": "Ні",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Magic", "Mystery", "Рото"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "VISION Модель 64.44",
+    "photo": "",
+    "price": "26 000 грн",
+    "characteristics": {
+      "leaf_width": "900 мм",
+      "leaf_height": "2000 мм",
+      "double_leaf": "Так",
+      "uneven_leaf": "Так",
+      "compatible_systems": ["Книжка", "Всередині отвору"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "SKYLINE Модель 55.21",
+    "photo": "",
+    "price": "23 900 грн",
+    "characteristics": {
+      "leaf_width": "800 мм",
+      "leaf_height": "2100 мм",
+      "double_leaf": "Ні",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Compack", "Magic"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "SKYLINE Модель 55.23",
+    "photo": "",
+    "price": "24 200 грн",
+    "characteristics": {
+      "leaf_width": "600 мм",
+      "leaf_height": "2000 мм",
+      "double_leaf": "Ні",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Пентал", "Купе"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "VISION Модель 64.45",
+    "photo": "",
+    "price": "26 150 грн",
+    "characteristics": {
+      "leaf_width": "900 мм",
+      "leaf_height": "2100 мм",
+      "double_leaf": "Так",
+      "uneven_leaf": "Так",
+      "compatible_systems": ["Книжка", "Всередині отвору", "Compack"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "CLASSIC Модель 65.44",
+    "photo": "",
+    "price": "24 800 грн",
+    "characteristics": {
+      "leaf_width": "700 мм",
+      "leaf_height": "2000 мм",
+      "double_leaf": "Ні",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Magic", "Mystery"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "CLASSIC Модель 64.22",
+    "photo": "",
+    "price": "25 300 грн",
+    "characteristics": {
+      "leaf_width": "800 мм",
+      "leaf_height": "2100 мм",
+      "double_leaf": "Ні",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Рото", "Купе"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  },
+  {
+    "name": "METAMORFOSA Модель 65.171",
+    "photo": "",
+    "price": "26 500 грн",
+    "characteristics": {
+      "leaf_width": "600 мм",
+      "leaf_height": "2100 мм",
+      "double_leaf": "Так",
+      "uneven_leaf": "Ні",
+      "compatible_systems": ["Compack", "Пентал", "Книжка"],
+      "installation_side": "універсальна сторонність",
+      "hinge_lock_cutout": "заводська"
+    }
+  }
+]
