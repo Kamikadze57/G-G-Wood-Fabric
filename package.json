@@ -1,21 +1,21 @@
 {
-  "name": "g-g-wood-fabric-parcel",
+  "name": "g-g-wood-fabric",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/Kamikadze57/G-G-Wood-Fabric-parcel.git",
+  "homepage": "https://github.com/Kamikadze57/G-G-Wood-Fabric.git",
   "scripts": {
     "start": "parcel src/index.html \"src/pages/**/*.html\"",
-    "build": "parcel build src/index.html \"src/pages/**/*.html\" --public-url /G-G-Wood-Fabric-parcel/"
+    "build": "parcel build src/index.html \"src/pages/**/*.html\" --public-url /G-G-Wood-Fabric/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kamikadze57/G-G-Wood-Fabric-parcel.git"
+    "url": "https://github.com/Kamikadze57/G-G-Wood-Fabric.git"
   },
   "keywords": [],
   "author": "Kami_57",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kamikadze57/G-G-Wood-Fabric-parcel/issues"
+    "url": "https://github.com/Kamikadze57/G-G-Wood-Fabric/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
