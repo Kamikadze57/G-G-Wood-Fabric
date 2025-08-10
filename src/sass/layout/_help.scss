@@ -1,0 +1,127 @@
+.help {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1340px) {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  }
+}
+.help__container {
+  background-color: #f3f0ee;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  margin: 0 20px;
+
+  @media screen and (min-width: 1340px) {
+  gap: 70px;
+  flex-direction: row;
+  align-items: normal;
+  }
+}
+.help__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.help__title {
+  color: #3b3937;
+  font-family: PermianSerifTypeface;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.4px;
+
+  @media screen and (min-width: 1340px) {
+  font-size: 64px;
+  letter-spacing: -0.64px;
+  margin-top: 90px;
+  }
+}
+.help__desc {
+  margin-top: 20px;
+  color: #3b3937;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  max-width: 334px;
+
+  @media screen and (min-width: 1340px) {
+  font-size: 22px;
+  max-width: 420px;
+  margin-top: 30px;
+  }
+}
+.help__form {
+  margin-top: 30px;
+
+  @media screen and (min-width: 1340px) {
+  margin-top: 60px;
+  }
+}
+.help__box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: 1340px) {
+  font-size: 22px;
+  flex-direction: row;
+  gap: 20px;
+  }
+}
+.help__label {
+  position: absolute;
+}
+.help__input {
+  padding: 20px 90px 22px 23px;
+  border: 2px solid #ffffff;
+  color: #3b3937;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.17px;
+
+  @media screen and (min-width: 1340px) {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  padding: 16px 60px 18px 17px;
+  padding-top: 16px;
+  padding-left: 18px;
+  padding-bottom: 17px;
+  }
+}
+.help__input:hover,
+.help__input:focus {
+  border-color: #a9845c;
+  outline: none;
+  color: #a9845c;
+}
+.help__btn {
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.78px;
+  background-color: #a9845c;
+  border: 2px solid #a9845c;
+  padding: 15px 36px;
+  margin-bottom: 25px;
+  width: 100%;
+  
+  @media screen and (min-width: 1340px) {
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  margin-bottom: 90px;
+  width: 60%;
+  }
+}
+.help__btn:hover,
+.help__btn:focus {
+  background-color: transparent;
+  color: #a9845c;
+  border-color: #a9845c;
+  cursor: pointer;
+  text-shadow: none;
+}
