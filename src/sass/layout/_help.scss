@@ -12,10 +12,8 @@
   flex-direction: column;
   gap: 35px;
   align-items: center;
-  margin: 0 20px;
 
   @media screen and (min-width: 1340px) {
-  gap: 70px;
   flex-direction: row;
   align-items: normal;
   }
@@ -24,13 +22,18 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  
+  @media screen and (min-width: 1340px) {
+  align-items: normal;
+  }
 }
 .help__title {
   color: #3b3937;
   font-family: PermianSerifTypeface;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: -0.4px;
+  max-width: 320px;
 
   @media screen and (min-width: 1340px) {
   font-size: 64px;
@@ -44,7 +47,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 140%;
-  max-width: 334px;
+  max-width: 318px;
 
   @media screen and (min-width: 1340px) {
   font-size: 22px;
@@ -84,10 +87,7 @@
   @media screen and (min-width: 1340px) {
   font-size: 18px;
   letter-spacing: 0.18px;
-  padding: 16px 60px 18px 17px;
-  padding-top: 16px;
-  padding-left: 18px;
-  padding-bottom: 17px;
+  padding: 16px 36px 18px 17px;
   }
 }
 .help__input:hover,

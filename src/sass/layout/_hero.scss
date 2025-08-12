@@ -1,12 +1,11 @@
 .hero {
-  background-image: url("../images/index/hero-bg_mobile.png");
+  background-image: url("../images/index/hero-bg.png");
   background-size: cover;
   background-position: center;
   padding: 70px 0;
   margin: 10px 10px 30px;
 
   @media screen and (min-width: 1340px) {
-  background-image: url("../images/index/hero-bg_desktop.png");
   padding: 130px 0;
   margin: 15px 15px 90px;
   }
@@ -22,13 +21,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/index/hero-text-bg_mobile.svg") no-repeat center, #33333384;
+  background: url("../images/index/hero-text-bg.svg") no-repeat center, #33333384;
   backdrop-filter: blur(3px);
   border-radius: 50%;
   padding: 80px 35px;
 
   @media screen and (min-width: 1340px) {
-    background-image: url("../images/index/hero-text-bg_desktop.svg");
   padding: 100px 50px;
   }
 }
