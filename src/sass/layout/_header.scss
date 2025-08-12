@@ -32,7 +32,8 @@
   color: $secondary-color;
   font-size: 16px;
   transition: color $normal;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $text-secondary;
   }
 }
@@ -43,9 +44,28 @@
 .header-catalog__btn {
   padding: 13px 26px;
   font-size: 13px;
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    fill: $accent-color;
+  }
+  &::before {
+    top: -6px;
+    right: -60px;
+    background-image: url('../images/button-top.png');
+    background-repeat: no-repeat;
+  }
+  &::after {
+    bottom: -6px;
+    right: -20px;
+    background-image: url('../images/button-bottom.png');
+    background-repeat: no-repeat;
+  }
 }
-
-
 
 .header-menu__container {
   display: none;

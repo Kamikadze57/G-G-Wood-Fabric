@@ -1,44 +1,41 @@
 .hero {
-  background-image: url("../images/index/hero-bg.png");
+  background-image: url('../images/index/hero-bg.png');
   background-size: cover;
   background-position: center;
   padding: 70px 0;
   margin: 10px 10px 30px;
-
   @media screen and (min-width: 1340px) {
-  padding: 130px 0;
-  margin: 15px 15px 90px;
+    padding: 130px 0;
+    margin: 15px 15px 90px;
   }
 }
-
 .hero__container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
 .hero__box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/index/hero-text-bg.svg") no-repeat center, #33333384;
+  background: url('../images/index/hero-text-bg.svg') no-repeat center,
+    #33333384;
   backdrop-filter: blur(3px);
   border-radius: 50%;
   padding: 80px 35px;
 
   @media screen and (min-width: 1340px) {
-  padding: 100px 50px;
+    padding: 100px 50px;
   }
 }
-
 .hero__title {
   font-family: PermianSerifTypeface;
   color: $text-secondary;
   font-size: 29px;
   margin-bottom: 5px;
-
+  text-align: center;
   @media screen and (min-width: 1340px) {
-  font-size: 36px;
+    font-size: 36px;
   }
 }
 
@@ -62,8 +59,8 @@
   margin-bottom: 15px;
 
   @media screen and (min-width: 1340px) {
-  font-size: 16px;
-  margin-bottom: 36px;
+    font-size: 16px;
+    margin-bottom: 36px;
   }
 }
 
@@ -74,8 +71,8 @@
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 
   @media screen and (min-width: 1340px) {
-  font-size: 15px;
-  padding: 26px;
-  padding: 16px 25px;
+    font-size: 15px;
+    padding: 26px;
+    padding: 16px 25px;
   }
 }

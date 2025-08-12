@@ -1,33 +1,94 @@
 .footer {
   padding: 80px 0;
-  // background-image: url('/images/footer-bg.png');
-//   background: url("/images/footer-left.svg") no-repeat 10% center, url("/images/footer-right.svg") no-repeat 90% center, $bg-primary;
+  background: url('../images/footer-bg.png') center / cover no-repeat, #3a3837;
 }
 .footer__container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .footer__box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  &:not(:first-child) {
+    margin-top: 18px;
+  }
 }
 .info__box {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 .footer__text {
-    color: $text-tertiary;
-    font-size: 13px;
+  color: $text-tertiary;
+  font-size: 14px;
+  transition: color $normal;
+}
+.footer__link {
+  &:hover,
+  &:focus {
+    color: $text-secondary;
+  }
 }
 .footer-adress__phone {
-    margin-top: 18px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .footer__phone {
-    font-size: 25px;
-    color: $text-secondary;
-    letter-spacing: -2px;
-
+  font-size: 25px;
+  color: $text-secondary;
+  letter-spacing: -2px;
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
+}
+.footer-contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__categories,
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__nav {
+  position: relative;
+}
+.footer__privacy {
+  margin-top: 2.5rem;
+}
+.footer-social__list {
+  position: absolute;
+  display: flex;
+  right: -60px;
+  top: -10px;
+}
+.footer-social__item {
+  border: 1px solid #505050;
+  border-radius: 50%;
+  background-color: $bg-primary;
+  fill: $text-secondary;
+  transition: fill $normal;
+  &:hover, &:focus {
+    fill: $secondary-color;
+  }
+  &:first-child {
+    z-index: 3;
+  }
+  &:nth-child(2) {
+    z-index: 2;
+  }
+  &:not(:last-child) {
+    margin-right: -8px;
+  }
+}
+.footer-social__link {
+  display: flex;
+  padding: 9px;
+}
+.footer-social__svg {
+  width: 22px;
+  height: 22px;
 }

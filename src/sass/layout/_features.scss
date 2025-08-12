@@ -16,8 +16,8 @@
   border-bottom: 1px solid #dadada;
 
   @media screen and (min-width: 1340px) {
-  max-width: 620px;
-  padding-bottom: 40px;
+    max-width: 620px;
+    padding-bottom: 40px;
   }
 }
 .features__title {
@@ -28,8 +28,8 @@
   color: #3b3937;
 
   @media screen and (min-width: 1340px) {
-  margin-top: 40px;
-  font-size: 36px;
+    margin-top: 40px;
+    font-size: 36px;
   }
 }
 .features__desc {
@@ -40,8 +40,8 @@
   font-size: 13px;
 
   @media screen and (min-width: 1340px) {
-  font-size: 16px;
-  margin-top: 19px;
+    font-size: 16px;
+    margin-top: 19px;
   }
 }
 .features__link {
@@ -52,10 +52,10 @@
   letter-spacing: 0.9px;
   position: absolute;
   right: 0;
-  
+
   @media screen and (min-width: 1340px) {
-  font-size: 15px;
-  letter-spacing: 0.78px;
+    font-size: 15px;
+    letter-spacing: 0.78px;
   }
 }
 .features__link:hover,

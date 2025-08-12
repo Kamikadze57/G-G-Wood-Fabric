@@ -4,9 +4,12 @@
   font-weight: 700;
   color: $text-secondary;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  transition: background-color $normal;
+  transition: background-color $normal, transform $normal;
   &:hover,
   &:focus {
     background-color: #926341;
+  }
+  &:active {
+    transform: scale(0.95);
   }
 }

@@ -1,0 +1,16 @@
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.catalog__item {
+padding: 40px 0 30px 30px;
+    @include flex-basis(40px, 1);
+  flex-basis: 100%;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(50% - 20px); /* 40px / 2 */
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(33.333% - 26.666px);
+  }
+}
