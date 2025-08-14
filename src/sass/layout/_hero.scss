@@ -4,6 +4,17 @@
   background-position: center;
   padding: 70px 0;
   margin: 10px 10px 30px;
+  
+  @media screen and (min-width: 768px) {
+    padding: 90px 0;
+    margin: 12px 12px 40px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 110px 0;
+    margin: 14px 14px 60px;
+  }
+
   @media screen and (min-width: 1340px) {
     padding: 130px 0;
     margin: 15px 15px 90px;
@@ -24,6 +35,14 @@
   border-radius: 50%;
   padding: 80px 35px;
 
+  @media screen and (min-width: 768px) {
+    padding: 85px 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 90px 40px;
+  }
+
   @media screen and (min-width: 1340px) {
     padding: 100px 50px;
   }
@@ -34,6 +53,11 @@
   font-size: 29px;
   margin-bottom: 5px;
   text-align: center;
+  
+  @media screen and (min-width: 768px) {
+  font-size: 32px;
+  }
+
   @media screen and (min-width: 1340px) {
     font-size: 36px;
   }
@@ -45,6 +69,14 @@
   color: $secondary-color;
   margin-bottom: 15px;
   font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+  margin-bottom: 17px;
+  }
+
+  @media screen and (min-width: 960px) {
+  font-size: 19px;
+  }
 
   @media screen and (min-width: 1340px) {
     font-size: 20px;
@@ -58,6 +90,11 @@
   text-align: center;
   margin-bottom: 15px;
 
+  @media screen and (min-width: 768px) {
+  font-size: 15px;
+  margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 1340px) {
     font-size: 16px;
     margin-bottom: 36px;
@@ -70,9 +107,13 @@
   font-size: 13px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 
+  @media screen and (min-width: 960px) {
+    font-size: 14px;
+    padding: 16px 30px;
+  }
+
   @media screen and (min-width: 1340px) {
     font-size: 15px;
-    padding: 26px;
     padding: 16px 25px;
   }
 }

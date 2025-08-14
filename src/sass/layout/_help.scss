@@ -2,8 +2,8 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 1340px) {
-  padding-top: 90px;
-  padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 }
 .help__container {
@@ -14,17 +14,26 @@
   align-items: center;
 
   @media screen and (min-width: 1340px) {
-  flex-direction: row;
-  align-items: normal;
+    flex-direction: row;
+    align-items: normal;
+  }
+}
+.help__img {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1340px) {
+    width: 80%;
   }
 }
 .help__content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   @media screen and (min-width: 1340px) {
-  align-items: normal;
+    align-items: normal;
   }
 }
 .help__title {
@@ -35,10 +44,21 @@
   letter-spacing: -0.4px;
   max-width: 320px;
 
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    max-width: none;
+    letter-spacing: -0.42px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 52px;
+    letter-spacing: -0.52px;
+  }
+
   @media screen and (min-width: 1340px) {
-  font-size: 64px;
-  letter-spacing: -0.64px;
-  margin-top: 90px;
+    font-size: 64px;
+    letter-spacing: -0.64px;
+    margin-top: 90px;
   }
 }
 .help__desc {
@@ -49,17 +69,20 @@
   line-height: 140%;
   max-width: 318px;
 
+  @media screen and (min-width: 768px) {
+    max-width: none;
+  }
   @media screen and (min-width: 1340px) {
-  font-size: 22px;
-  max-width: 420px;
-  margin-top: 30px;
+    font-size: 22px;
+    max-width: 420px;
+    margin-top: 30px;
   }
 }
 .help__form {
   margin-top: 30px;
 
   @media screen and (min-width: 1340px) {
-  margin-top: 60px;
+    margin-top: 60px;
   }
 }
 .help__box {
@@ -68,9 +91,9 @@
   gap: 10px;
 
   @media screen and (min-width: 1340px) {
-  font-size: 22px;
-  flex-direction: row;
-  gap: 20px;
+    font-size: 22px;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 .help__label {
@@ -84,10 +107,14 @@
   font-weight: 500;
   letter-spacing: 0.17px;
 
+  @media screen and (min-width: 768px) {
+    padding: 18px 400px 20px 21px;
+  }
+
   @media screen and (min-width: 1340px) {
-  font-size: 18px;
-  letter-spacing: 0.18px;
-  padding: 16px 36px 18px 17px;
+    font-size: 18px;
+    letter-spacing: 0.18px;
+    padding: 16px 28px 18px 17px;
   }
 }
 .help__input:hover,
@@ -109,12 +136,12 @@
   padding: 15px 36px;
   margin-bottom: 25px;
   width: 100%;
-  
+
   @media screen and (min-width: 1340px) {
-  font-size: 15px;
-  letter-spacing: 0.9px;
-  margin-bottom: 90px;
-  width: 60%;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    margin-bottom: 90px;
+    width: 60%;
   }
 }
 .help__btn:hover,
