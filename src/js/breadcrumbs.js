@@ -8,6 +8,7 @@ const FRIENDLY_NAMES = {
   'about.html': 'Про нас',
   'contacts.html': 'Контакти',
   pages: null,
+  catalog: 'Каталог',
 };
 
 function getFriendlySegmentName(segment) {
@@ -25,35 +26,52 @@ function getFriendlySegmentName(segment) {
   }
   return displaySegment;
 }
+
 export function generateBreadcrumbs() {
   const breadcrumbsContainer = document.querySelector('[breadcrumbs]');
-  if (!breadcrumbsContainer) {
-    return;
-  }
+  if (!breadcrumbsContainer) return;
+
+  // формуємо сегменти та одразу порахуємо відносний лінк до pages/catalog.html
   const path = window.location.pathname;
-  let segments = path.split('/').filter(s => s !== '');
+  const segments = path.split('/').filter(s => s !== '');
+  const catalogIdx = segments.indexOf('catalog');
+  const relCatalogLink =
+    catalogIdx !== -1
+      ? '../'.repeat(segments.length - 1 - catalogIdx) + 'pages/catalog.html'
+      : '/pages/catalog.html';
+
   let breadcrumbHTML = '';
-  let currentPath = '/'; // Додаємо посилання на "Головна" першим
+  let currentPath = '/';
+
+  // Головна
   breadcrumbHTML += `<a class="breadcrumbs__link" href="${currentPath}">${
     FRIENDLY_NAMES['index.html'] || 'Головна'
   }</a>`;
+
   segments.forEach((segment, index) => {
-    const decodedSegment = decodeURIComponent(segment); // Пропускаємо сегменти, які позначені як null
+    const decodedSegment = decodeURIComponent(segment);
+
     if (FRIENDLY_NAMES[decodedSegment] === null) {
       currentPath += segment + '/';
       return;
     }
+
     const displaySegment = getFriendlySegmentName(segment);
     currentPath += segment + '/'; // Додаємо роздільник перед кожним наступним елементом
     breadcrumbHTML += ` <span class="breadcrumbs__spacer">-</span> `; // Останній сегмент - текст, інші - посилання
     if (index === segments.length - 1) {
-      if (segment === 'index.html' && path === '/') {
-        return;
-      }
+      if (segment === 'index.html' && path === '/') return;
       breadcrumbHTML += `<span class="bredcrumbs__page">${displaySegment}</span>`;
     } else {
-      breadcrumbHTML += `<a href="${currentPath}">${displaySegment}</a>`;
+      // тільки для крихти catalog підміняємо посилання
+      const link =
+        decodedSegment === 'catalog' || decodedSegment === 'catalog.html'
+          ? relCatalogLink
+          : currentPath;
+
+      breadcrumbHTML += `<a class="breadcrumbs__link" href="${link}">${displaySegment}</a>`;
     }
   });
+
   breadcrumbsContainer.innerHTML = breadcrumbHTML;
 }

@@ -1,16 +1,92 @@
+// .catalog__item {
+// padding: 40px 0 30px 30px;
+//     @include flex-basis(40px, 1);
+//   flex-basis: 100%;
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc(50% - 20px); /* 40px / 2 */
+//   }
+//   @media screen and (min-width: 1200px) {
+//     flex-basis: calc(33.333% - 26.666px);
+//   }
+// }
+.catalog__title {
+  font-size: 64px;
+  font-weight: 700;
+}
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 30px 0 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 .catalog__item {
-padding: 40px 0 30px 30px;
-    @include flex-basis(40px, 1);
-  flex-basis: 100%;
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(50% - 20px); /* 40px / 2 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:nth-child(1) {
+    background-image: url('../images/catalog/interior-doors.png');
   }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(33.333% - 26.666px);
+  &:nth-child(2) {
+    background-image: url('../images/catalog/furniture.png');
   }
+  &:nth-child(3) {
+    background-image: url('../images/catalog/wall-panels.png');
+  }
+  &:nth-child(4) {
+    background-image: url('../images/catalog/stairs.png');
+  }
+  &:nth-child(5) {
+    background-image: url('../images/catalog/furniture-fronts.png');
+  }
+}
+.catalog-item__link {
+  // position: relative;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.5rem;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   inset: 0;
+  //   background: rgba(0,0,0,0.4);
+  //   z-index: 0;
+  //   transition: background 0.3s ease;
+  // }
+  // &::before {
+  //   background: rgba(0,0,0,0.6);
+  // }
+}
+.catalog-item__title {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4rem;
+  font-weight: 600;
+  max-width: 80%;
+}
+
+.catalog-item__btn {
+  z-index: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  background: $bg-secondary;
+  display: flex;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.catalog-item__svg {
+  width: 14px;
+  height: 14px;
+  fill: $text-primary;
 }
