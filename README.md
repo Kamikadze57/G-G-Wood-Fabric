@@ -28,5 +28,5 @@
 
 Проєкт виконано командою студентів.
 
-* [https://github.com/Kamikadze57](Kamikadze57)
-* [https://github.com/varvaramois](Varvaramois)
+* [Kamikadze57](https://github.com/Kamikadze57)
+* [Varvaramois](https://github.com/varvaramois)
