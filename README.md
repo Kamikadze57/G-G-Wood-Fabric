@@ -22,11 +22,11 @@
 ## Макет
 
 Для створення цього проєкту використовувався наступний макет, розроблений на Figma:
-- [https://www.figma.com/design/yFkp8vPef7HzmVUIequoBj/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE?node-id=75-4733&t=Q2jXS6cDKuq05N4d-1](Макет)
+- [Макет](https://www.figma.com/design/yFkp8vPef7HzmVUIequoBj/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE?node-id=75-4733&t=Q2jXS6cDKuq05N4d-1)
 
 ## Автори
 
 Проєкт виконано командою студентів.
 
-* [https://github.com/Kamikadze57]
-* [https://github.com/varvaramois]
+* [https://github.com/Kamikadze57](Kamikadze57)
+* [https://github.com/varvaramois](Varvaramois)
