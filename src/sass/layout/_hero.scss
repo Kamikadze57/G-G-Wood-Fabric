@@ -4,17 +4,14 @@
   background-position: center;
   padding: 70px 0;
   margin: 10px 10px 30px;
-  
   @media screen and (min-width: 768px) {
     padding: 90px 0;
     margin: 12px 12px 40px;
   }
-
   @media screen and (min-width: 960px) {
     padding: 110px 0;
     margin: 14px 14px 60px;
   }
-
   @media screen and (min-width: 1340px) {
     padding: 130px 0;
     margin: 15px 15px 90px;
@@ -28,90 +25,76 @@
 .hero__box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background: url('../images/index/hero-text-bg.svg') no-repeat center,
-    #33333384;
+  text-align: center;
+  
+  width: 80vw;
+  height: 80vw;
+  max-width: 400px;
+  max-height: 400px;
+  
+  background: url('../images/index/hero-text-bg.svg') no-repeat center,#33333384;
   backdrop-filter: blur(3px);
   border-radius: 50%;
-  padding: 80px 35px;
-
-  @media screen and (min-width: 768px) {
-    padding: 85px 32px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 90px 40px;
-  }
-
-  @media screen and (min-width: 1340px) {
-    padding: 100px 50px;
-  }
 }
 .hero__title {
   font-family: PermianSerifTypeface;
   color: $text-secondary;
-  font-size: 29px;
+  font-size: 24px;
   margin-bottom: 5px;
-  text-align: center;
-  
-  @media screen and (min-width: 768px) {
-  font-size: 32px;
+  @media screen and (min-width: 383px) {
+    font-size: 29px;
   }
-
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
   @media screen and (min-width: 1340px) {
     font-size: 36px;
   }
 }
-
 .hero__subtitle {
   font-family: PermianSerifTypeface;
   font-size: 18px;
   color: $secondary-color;
   margin-bottom: 15px;
   font-weight: 700;
-
   @media screen and (min-width: 768px) {
-  margin-bottom: 17px;
+    margin-bottom: 17px;
   }
-
   @media screen and (min-width: 960px) {
-  font-size: 19px;
+    font-size: 19px;
   }
-
   @media screen and (min-width: 1340px) {
     font-size: 20px;
   }
 }
-
 .hero__heading {
-  font-size: 13px;
+  font-size: 12px;
   color: $text-secondary;
   font-weight: 700;
-  text-align: center;
   margin-bottom: 15px;
-
-  @media screen and (min-width: 768px) {
-  font-size: 15px;
-  margin-bottom: 20px;
+  @media screen and (min-width: 350px) {
+    font-size: 13px;
   }
-
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
   @media screen and (min-width: 1340px) {
     font-size: 16px;
     margin-bottom: 36px;
   }
 }
-
 .hero__btn {
   padding: 16px 32px;
   background-color: $accent-color;
   font-size: 13px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-
   @media screen and (min-width: 960px) {
     font-size: 14px;
     padding: 16px 30px;
   }
-
   @media screen and (min-width: 1340px) {
     font-size: 15px;
     padding: 16px 25px;
