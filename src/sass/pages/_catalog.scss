@@ -1,16 +1,99 @@
+// .catalog__item {
+// padding: 40px 0 30px 30px;
+//     @include flex-basis(40px, 1);
+//   flex-basis: 100%;
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc(50% - 20px); /* 40px / 2 */
+//   }
+//   @media screen and (min-width: 1200px) {
+//     flex-basis: calc(33.333% - 26.666px);
+//   }
+// }
+.catalog {
+  user-select: none;
+}
+.catalog__title {
+  font-size: 64px;
+  font-weight: 700;
+}
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  margin: 30px 0 90px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 40px;
 }
 .catalog__item {
-padding: 40px 0 30px 30px;
-    @include flex-basis(40px, 1);
-  flex-basis: 100%;
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(50% - 20px); /* 40px / 2 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &:nth-child(1) {
+    background-image: url('../images/catalog/interior-doors.png');
+    grid-column: 1 / span 2;
   }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(33.333% - 26.666px);
+  &:nth-child(2) {
+    background-image: url('../images/catalog/furniture.png');
+    grid-column: 3 / span 2;
   }
+  &:nth-child(3) {
+    background-image: url('../images/catalog/wall-panels.png');
+    grid-column: 5 / span 2;
+  }
+  &:nth-child(4) {
+    background-image: url('../images/catalog/stairs.png');
+    grid-column: 1 / span 3;
+  }
+  &:nth-child(5) {
+    background-image: url('../images/catalog/furniture-fronts.png');
+    grid-column: 4 / span 3;
+  }
+}
+.catalog-item__link {
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 40px 0 30px 30px;
+  color: $text-secondary;
+  transition: box-shadow $normal;
+  &:hover {
+    box-shadow: 3px 3px 10px -1px rgba(21,21,21,0.75);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    transition: background-color $normal;
+  }
+  &:hover::before {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  &:hover .catalog-item__btn {
+    transform: scale(1.2);
+    background-color: $secondary-color;
+  }
+}
+.catalog-item__title {
+  z-index: 1;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.catalog-item__btn {
+  z-index: 1;
+  padding: 12px;
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  background-color: $bg-secondary;
+  transition: background-color $normal, transform $normal;
+}
+
+.catalog-item__svg {
+  width: 14px;
+  height: 14px;
+  fill: $text-primary;
 }

@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог</title>
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon"/>
-    <link rel="stylesheet" href="../sass/main.scss" />
-  </head>
-  <body>
-    <include src="partials/header.html"></include>
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог</title>
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../sass/main.scss" />
+</head>
+<body>
+  <include src="partials/header.html"></include>
+  <main>
+    <div class="container">
+      <nav class="breadcrumbs" breadcrumbs></nav>
+    </div>
+    <section class="catalog">
       <div class="container">
-        <nav class="breadcrumbs" breadcrumbs></nav>
-      </div>
-      <section class="catalog">
-        <div class="container">
-          <h1 class="catalog__title">Каталог</h1>
-          <ul class="catalog__list">
-            <li class="catalog__item">
+        <h1 class="catalog__title">Каталог</h1>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="../catalog/catalog-interior-doors.html" class="catalog-item__link">
               <h2 class="catalog-item__title">Міжкімнатні двері</h2>
               <button class="catalog-item__btn">
                 <svg class="catalog-item__svg">
                   <use href="../images/icons.svg#next"></use>
                 </svg>
               </button>
-            </li>
-            <li class="catalog__item">
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="" class="catalog-item__link">
               <h2 class="catalog-item__title">Меблі</h2>
               <button class="catalog-item__btn">
                 <svg class="catalog-item__svg">
                   <use href="../images/icons.svg#next"></use>
                 </svg>
               </button>
-            </li>
-            <li class="catalog__item">
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="" class="catalog-item__link">
               <h2 class="catalog-item__title">Стінові панелі "Баузери"</h2>
               <button class="catalog-item__btn">
                 <svg class="catalog-item__svg">
                   <use href="../images/icons.svg#next"></use>
                 </svg>
               </button>
-            </li>
-            <li class="catalog__item">
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="" class="catalog-item__link">
               <h2 class="catalog-item__title">Сходи</h2>
               <button class="catalog-item__btn">
                 <svg class="catalog-item__svg">
                   <use href="../images/icons.svg#next"></use>
                 </svg>
               </button>
-            </li>
-            <li class="catalog__item">
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="" class="catalog-item__link">
               <h2 class="catalog-item__title">Меблеві фасади</h2>
               <button class="catalog-item__btn">
                 <svg class="catalog-item__svg">
                   <use href="../images/icons.svg#next"></use>
                 </svg>
               </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <include src="partials/footer.html"></include>
-    <script type="module" src="../main.js"></script>
-  </body>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <include src="partials/footer.html"></include>
+  <script type="module" src="../main.js"></script>
+</body>
 </html>

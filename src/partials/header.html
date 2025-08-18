@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" header>
   <div class="container header__container">
     <a href="../index.html" class="logo header__logo">
       <svg class="logo__svg">
@@ -16,7 +16,8 @@
     <ul class="header__contacts">
       <li class="header-contacts__item">
         <address class="header-contacts__address">
-          <a href="mailto:support@sofiadoors.com" class="header-contacts__link header-contacts__email">support@sofiadoors.com</a>
+          <a href="mailto:support@sofiadoors.com"
+            class="header-contacts__link header-contacts__email">support@sofiadoors.com</a>
         </address>
       </li>
       <li class="header-contacts__item">
@@ -28,31 +29,31 @@
     <form action="../pages/catalog.html">
       <button class="header-catalog__btn button" type="submit">КАТАЛОГ</button>
     </form>
-    <div class="menu-btn__box">
-      <button class="header-mobile__btn">
-        <svg class="header-mobile__svg">
+    <div class="mobile-btn__box">
+      <button class="mobile__btn">
+        <svg class="mobile__svg">
           <use href="../images/icons.svg#phone"></use>
         </svg>
       </button>
-      <button class="header-mobile__btn">
-        <svg class="header-mobile__svg">
+      <button class="mobile__btn" mobileBtn>
+        <svg class="mobile__svg">
           <use href="../images/icons.svg#menu"></use>
         </svg>
       </button>
     </div>
-    <div class="header-menu__container">
-      <ul class="header-menu__list">
-        <li class="header-menu__item"><a href="../pages/delivery-and-payment.html" class="header-menu__link">Доставка</a></li>
-        <li class="header-menu__item"><a href="../pages/articles.html" class="header-menu__link">Статті</a></li>
-        <li class="header-menu__item"><a href="../pages/about-us.html" class="header-menu__link">Про нас</a></li>
-        <li class="header-menu__item"><a href="../pages/contacts.html" class="header-menu__link">Контакти</a></li>
-      </ul>
-      <address class="header-menu__address">
-        <a href="mailto:support@sofiadoors.com" class="header-menu__email">support@sofiadoors.com</a>
-      </address>
-      <address class="header-menu__address">
-        <a href="tel:+380000000000" class="header-menu__phone">+380 (00) 000-00-00</a>
-      </address>
-    </div>
   </div>
 </header>
+<div class="mobile__container" mobileMenu>
+  <ul class="mobile__list">
+    <li class="mobile__item"><a href="../pages/delivery-and-payment.html" class="mobile__link">Доставка</a></li>
+    <li class="mobile__item"><a href="../pages/articles.html" class="mobile__link">Статті</a></li>
+    <li class="mobile__item"><a href="../pages/about-us.html" class="mobile__link">Про нас</a></li>
+    <li class="mobile__item"><a href="../pages/contacts.html" class="mobile__link">Контакти</a></li>
+  </ul>
+  <address class="mobile__address">
+    <a href="tel:+380000000000" class="mobile__phone">+380 (00) 000-00-00</a>
+  </address>
+  <address class="mobile__address">
+    <a href="mailto:support@sofiadoors.com" class="mobile__email">support@sofiadoors.com</a>
+  </address>
+</div>
