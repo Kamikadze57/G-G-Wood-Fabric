@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  
+
   @media screen and (min-width: 768px) {
     justify-content: center;
     flex-direction: row;
@@ -13,13 +13,13 @@
   position: relative;
   width: 90%;
   padding-bottom: 35px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid $bg-tertiary;
 
   @media screen and (min-width: 768px) {
-    width: calc(48% - 15px); 
+    width: calc(48% - 15px);
   }
   @media screen and (min-width: 960px) {
-  max-width: 430px;
+    max-width: 430px;
   }
   @media screen and (min-width: 1340px) {
     max-width: 620px;
@@ -31,10 +31,10 @@
   line-height: 120%;
   font-size: 29px;
   letter-spacing: -0.02em;
-  color: #3b3937;
+  color: $text-primary;
 
   @media screen and (min-width: 960px) {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   @media screen and (min-width: 1340px) {
@@ -44,14 +44,14 @@
 }
 .features__desc {
   margin-top: 10px;
-  color: #3b3937;
+  color: $text-primary;
   line-height: 130%;
   margin-bottom: 24px;
   font-size: 13px;
 
   @media screen and (min-width: 960px) {
-  font-size: 15px;
-  margin-top: 15px;
+    font-size: 15px;
+    margin-top: 15px;
   }
 
   @media screen and (min-width: 1340px) {
@@ -60,7 +60,7 @@
   }
 }
 .features__link {
-  color: #b14101;
+  color: $primary-color;
   font-size: 13px;
   font-weight: 700;
   line-height: 140%;
@@ -69,15 +69,16 @@
   right: 0;
 
   @media screen and (min-width: 960px) {
-  font-size: 14px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 1340px) {
     font-size: 15px;
     letter-spacing: 0.78px;
   }
-}
-.features__link:hover,
-.features__link:focus {
-  color: #a9845c;
+  transition: color $normal;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

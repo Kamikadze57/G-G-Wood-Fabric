@@ -7,7 +7,6 @@
   }
 }
 .articles__container {
-  
   @media screen and (min-width: 1340px) {
     position: relative;
   }
@@ -28,21 +27,21 @@
   }
 }
 .articles__item {
-  border: 1px solid #dadada;
+  border: 1px solid $bg-tertiary;
 
   @media screen and (min-width: 768px) {
-    width: calc(50% - 10px); 
+    width: calc(50% - 10px);
   }
 
   @media screen and (min-width: 1340px) {
-    width: calc(32% - 20px); 
+    width: calc(32% - 20px);
   }
 }
 .articles__img {
   width: 100%;
 }
 .articles__title {
-  color: #3b3937;
+  color: $text-primary;
   font-family: PermianSerifTypeface;
   font-size: 40px;
   line-height: 100%;
@@ -57,17 +56,17 @@
   @media screen and (min-width: 1340px) {
     font-size: 64px;
     letter-spacing: -0.64px;
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 .articles__btn {
-  border: 1px solid #dadada;
-  color: #3b3937;
+  border: 1px solid $bg-tertiary;
+  color: $text-primary;
   font-size: 13px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.78px;
-  background-color: #ffffff;
+  background-color: $text-secondary;
   padding: 18px 132px;
   width: 100%;
   margin-top: 20px;
@@ -81,18 +80,19 @@
     right: 28px;
     max-width: 390px;
   }
-}
-.articles__btn:hover,
-.articles__btn:focus {
-  color: #a9845c;
-  border-color: #a9845c;
-  cursor: pointer;
+  transition: color $normal, border-color $normal;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+    cursor: pointer;
+  }
 }
 .articles__content {
   padding: 30px;
 }
 .articles__headline {
-  color: #3b3937;
+  color: $text-primary;
   font-family: PermianSerifTypeface;
   font-size: 19px;
   line-height: 110%;
@@ -109,7 +109,7 @@
   }
 }
 .articles__desc {
-  color: #3b3937;
+  color: $text-primary;
   font-size: 11px;
   line-height: 140%;
   margin-bottom: 41px;
@@ -123,22 +123,23 @@
   justify-content: space-between;
 }
 .articles__link {
-  color: #b14101;
+  color: $primary-color;
   font-size: 11px;
   font-weight: 700;
-  border-bottom: 1px solid #b14101;
+  border-bottom: 1px solid $primary-color;
   line-height: 140%;
 
   @media screen and (min-width: 1340px) {
     font-size: 12px;
   }
-}
-.articles__link:hover,
-.articles__link:focus {
-  color: #a9845c;
+  transition: color $normal;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .articles__date {
-  color: #3b3937;
+  color: $text-primary;
   font-size: 12px;
   line-height: 140%;
   opacity: 0.6;

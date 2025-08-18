@@ -8,7 +8,7 @@
 }
 .showcase__title {
   margin-bottom: 15px;
-  color: #3b3937;
+  color: $text-primary;
   font-family: PermianSerifTypeface;
   font-size: 40px;
   line-height: 100%;
@@ -35,26 +35,28 @@
 }
 .showcase__item {
   padding: 10px 20px 8px;
-  border: 1px solid #dadada;
+  border: 1px solid $bg-tertiary;
 
   @media screen and (min-width: 1340px) {
     padding: 10px 54px;
   }
-}
-.showcase__item:hover,
-.showcase__item:focus {
-  border-color: #a9845c;
-  cursor: pointer;
-}
-.showcase__item:hover .showcase__link,
-.showcase__item:focus .showcase__link {
-  color: #a9845c;
+  transition: border-color $normal;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    cursor: pointer;
+  }
+  &:hover .showcase__link,
+  &:focus .showcase__link {
+    color: $accent-color;
+  }
 }
 .showcase__link {
-  color: #3b3937;
+  color: $text-primary;
   font-size: 15px;
   letter-spacing: 0.9px;
   white-space: nowrap;
+  transition: color $normal;
 }
 .products__list {
   display: flex;
@@ -69,20 +71,20 @@
 }
 .products__item {
   padding: 20px 20px 60px;
-  border: 1px solid #dadada;
+  border: 1px solid $bg-tertiary;
   position: relative;
-    // max-width: 400px;
+  // max-width: 400px;
 
   @media screen and (min-width: 768px) {
-    width: calc(45% - 15px); 
+    width: calc(45% - 15px);
   }
 
   @media screen and (min-width: 1340px) {
-    width: calc(30% - 20px); 
+    width: calc(30% - 20px);
   }
 }
 .products__title {
-  color: #3b3937;
+  color: $text-primary;
   font-size: 17px;
   font-weight: 500;
   line-height: 100%;
@@ -96,7 +98,7 @@
   }
 }
 .products__price {
-  color: #3b3937;
+  color: $text-primary;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.17px;
@@ -123,7 +125,7 @@
 }
 .products__link {
   display: inline-block;
-  color: #b14101;
+  color: $primary-color;
   font-size: 13px;
   font-weight: 700;
   line-height: 140%; /* 21px */
@@ -141,21 +143,22 @@
     letter-spacing: 0.9px;
     margin-top: 23px;
   }
-}
-.products__link:hover,
-.products__link:focus {
-  color: #a9845c;
-  cursor: pointer;
+  transition: color $normal;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
 }
 .showcase__btn {
   margin-top: 20px;
-  border: 1px solid #dadada;
-  color: #3b3937;
+  border: 1px solid $bg-tertiary;
+  color: $text-primary;
   font-size: 13px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.78px;
-  background-color: #ffffff;
+  background-color: $text-secondary;
   width: 100%;
   padding-top: 17px;
   padding-bottom: 17px;
@@ -167,10 +170,11 @@
     padding-bottom: 20px;
     margin-top: 40px;
   }
-}
-.showcase__btn:hover,
-.showcase__btn:focus {
-  color: #a9845c;
-  border-color: #a9845c;
-  cursor: pointer;
+  transition: color $normal, border-color $normal;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+    cursor: pointer;
+  }
 }
