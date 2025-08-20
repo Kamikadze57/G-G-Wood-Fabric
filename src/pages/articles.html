@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Статті</title>
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../sass/main.scss" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статті</title>
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../sass/main.scss" />
 </head>
 <body>
-    <include src="partials/header.html"></include>
-    <main>
+  <include src="partials/header.html"></include>
+  <main>
+    <div class="container">
+      <nav class="breadcrumbs" breadcrumbs></nav>
+    </div>
+    <section class="articles">
       <div class="container">
-        <nav class="breadcrumbs" breadcrumbs></nav>
+        <div class="articles-title__container">
+          <h1 class="articles__title title">Статті</h1>
+        </div>
+        <ul class="articles__list" articlesList>
+          <li class="articles__item">
+            <img src="../images/404.png" alt="" class="articles__img">
+            <div class="articles__content">
+              <div class="articles-content__box">
+                <h2 class="articles-item__title"></h2>
+                <p class="articles__desc"></p>
+              </div>
+              <div class="articles__footer">
+                <a href="" class="link articles__link">Читати далі</a>
+                <p class="articles__date">дата</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="articles-more__btn">ПОКАЗАТИ ВСЕ</button>
       </div>
-    </main>
-    <include src="partials/footer.html"></include>
-    <script type="module" src="../main.js"></script>
+    </section>
+  </main>
+  <include src="partials/footer.html"></include>
+  <script type="module" src="../js/articles.js"></script>
+  <script type="module" src="../main.js"></script>
 </body>
 </html>
