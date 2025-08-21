@@ -1,6 +1,25 @@
 .contacts__container {
   display: flex;
-  gap: 40px;
+  gap: 10px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: 960px) {
+    flex-direction: row;
+    gap: 26px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    gap: 40px;
+  }
+}
+.contacts__box {
+  display: flex;
+  flex-direction: column;
 }
 .contacts__list {
   display: flex;
@@ -9,41 +28,99 @@
 .contacts__title {
   color: $text-primary;
   font-family: PermianSerifTypeface;
-  font-size: 64px;
   line-height: 100%;
-  letter-spacing: -0.64px;
-  margin-bottom: 45px;
+  font-size: 32px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 960px) {
+    font-size: 45px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    font-size: 64px;
+    letter-spacing: -0.64px;
+    margin-bottom: 45px;
+  }
 }
 .contacts__list {
   display: flex;
   flex-direction: column;
-  gap: 38px;
+  gap: 15px;
   background-color: $bg-secondary;
-  padding: 64px 70px 70px;
+  padding: 24px 25px;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 40px;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 52px 50px;
+    gap: 26px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    gap: 38px;
+    padding: 64px 70px 70px;
+  }
 }
 .contacts__subtitle {
   color: $text-primary;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 130%;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    margin-bottom: 5px;
+  }
 }
 .contacts__metro,
 .contacts__address,
 .contacts__schedule {
   color: $text-primary;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0.18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    font-size: 18px;
+  }
 }
 .contacts__phone,
 .contacts__email {
   color: $primary-color;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.15px;
   transition: color $normal;
+
+  @media screen and (min-width: 768px) {
+    font-size: 17px;
+    letter-spacing: 0.17px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 18px;
+  }
   &:hover,
   &:focus {
     color: $secondary-color;
@@ -80,49 +157,130 @@
   width: 22px;
   height: 22px;
 }
+.contacts__map {
+  width: 70%;
+}
 
 /* Contact-us */
 .contact-us {
-  padding-top: 40px;
-  padding-bottom: 90px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+
+  @media screen and (min-width: 1340px) {
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
 }
 .contact-us__container {
   background-color: $bg-secondary;
   display: flex;
-  padding: 70px;
-  justify-content: space-between;
-  align-items: baseline;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1340px) {
+    padding: 70px;
+    justify-content: space-between;
+  }
+}
+.contact-us__box {
+  @media screen and (min-width: 768px) {
+    max-width: 250px;
+  }
+  @media screen and (min-width: 1340px) {
+    max-width: none;
+  }
 }
 .contact-us__title {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: $text-primary;
   font-family: PermianSerifTypeface;
-  font-size: 64px;
+  font-size: 32px;
   line-height: 100%;
-  letter-spacing: -0.64px;
+  letter-spacing: -0.24px;
+
+  @media screen and (min-width: 960px) {
+    font-size: 45px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    font-size: 64px;
+    letter-spacing: -0.64px;
+    margin-bottom: 24px;
+  }
 }
 .contact-us__headline {
   color: $text-primary;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 140%;
-  max-width: 345px;
+
+  @media screen and (min-width: 960px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    font-size: 22px;
+    max-width: 345px;
+  }
 }
 .contact-us__form {
-  width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 55%;
+  }
+
+  @media screen and (min-width: 1340px) {
+    width: 60%;
+  }
 }
 .contact-us__form--container {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 5px;
+
+  @media screen and (min-width: 768px) {
+  gap: 2px;
+  flex-direction: row;
+  }
 }
 .contact-us__input,
 .contact-us__comment {
   color: $text-primary;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 100%;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.15px;
   border: 1px solid $text-secondary;
   transition: color $normal, border-color $normal;
+
+  @media screen and (min-width: 960px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    font-size: 18px;
+    letter-spacing: 0.18px;
+  }
+
   &:hover,
   &:focus {
     border-color: $accent-color;
@@ -132,30 +290,51 @@
   }
 }
 .contact-us__input {
-  padding: 20px 99px 22px 23px;
+  padding: 16px 52px 18px 21px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1340px) {
+    padding: 20px 99px 22px 23px;
+  }
 }
 .contact-us__comment {
   resize: none;
   padding: 20px 23px;
 }
 .contact-us__form-container {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 .contact-us__btn {
   color: $text-secondary;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.9px;
-  margin-top: 30px;
-  width: 65%;
-  padding: 20px 32px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px 22px;
   background-color: $accent-color;
   border: 2px solid $accent-color;
   transition: background-color $normal, color $normal, border-color $normal;
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    padding: 13px 20px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    width: 65%;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 20px 32px;
+  }
   &:hover,
   &:focus {
     background-color: transparent;

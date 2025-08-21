@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS.TITLE</title>
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="../sass/main.scss" />
-</head>
-<body>
+  </head>
+  <body>
     <include src="partials/header.html"></include>
     <main>
       <div class="container">
         <nav class="breadcrumbs" breadcrumbs></nav>
       </div>
+      <section>
+        <div class="container">
+          <button type="button" class="button product-card__btn" data-modal-open>
+            ВІДКРИТИ
+          </button>
+          <!-- сорі, в мене психічне порушення -->
+        </div>
+      </section>
     </main>
     <include src="partials/footer.html"></include>
+    <button
+      type="button"
+      class="btn-close product-card__btn--close visually-hidden"
+      data-modal-close
+    >
+      <svg class="icon product-card__icon">
+        <use xlink:href="../images/icons.svg#icon-close"></use>>
+      </svg>
+    </button>
+    <div class="backdrop is-hidden product-card__backdrop" data-modal>
+      <div class="modal product-card__modal">
+        <div class="modal__content">
+          <h2 class="product-card__title">Замовлення товару</h2>
+          <div class="product-card__box"></div>
+          <p class="product-card__headline">
+            Залиште Ваш номер телефону! Ми зконтактуємося з Вами з приводу
+            товару протягом 15 хвилин
+          </p>
+          <form class="product-card__form">
+            <label for="name" class="product-card__label"></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Як вас звати?"
+              required
+              class="product-card__input"
+            />
+            <label for="phone" class="product-card__label"></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Ваш телефон"
+              required
+              class="product-card__input"
+            />
+            <button
+              type="button"
+              class="button product-card__btn--order"
+              data-modal-btn
+            >
+              ЗАМОВИТИ ТОВАР
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script type="module" src="../main.js"></script>
-</body>
+  </body>
 </html>
