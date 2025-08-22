@@ -1,14 +1,37 @@
 .articles {
-  padding-bottom: 60px;
-
+  margin-bottom: 40px;
+  @media screen and (min-width: 960px) {
+    margin-bottom: 70px;
+  }
   @media screen and (min-width: 1340px) {
-    padding-bottom: 90px;
-    position: relative;
+    margin-bottom: 90px;
   }
 }
-.articles__container {
-  @media screen and (min-width: 1340px) {
-    position: relative;
+.articles-title__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.articles__title {
+  margin-bottom: 0;
+}
+.articles__form {
+  width: 31.2%;
+}
+.articles__btn {
+  border: 1px solid $bg-tertiary;
+  background: inherit;
+  padding: 20px 0;
+  font-size: 15px;
+  color: $text-primary;
+  font-weight: 700;
+  width: 100%;
+  transition: color $normal, border-color $normal;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
   }
 }
 .articles__list {
@@ -16,23 +39,25 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
-
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
+    gap: 20px;
+    justify-content: center;
   }
-
   @media screen and (min-width: 1340px) {
     gap: 40px;
   }
 }
 .articles__item {
   border: 1px solid $bg-tertiary;
-
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
-    width: calc(50% - 10px);
+    width: calc(50% - 12px);
   }
-
   @media screen and (min-width: 1340px) {
     width: calc(32% - 20px);
   }
@@ -40,85 +65,45 @@
 .articles__img {
   width: 100%;
 }
-.articles__title {
-  color: $text-primary;
-  font-family: PermianSerifTypeface;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: -0.4px;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 960px) {
-    font-size: 52px;
-    letter-spacing: -0.52px;
-  }
-
-  @media screen and (min-width: 1340px) {
-    font-size: 64px;
-    letter-spacing: -0.64px;
-    margin-bottom: 40px;
-  }
-}
-.articles__btn {
-  border: 1px solid $bg-tertiary;
-  color: $text-primary;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.78px;
-  background-color: $text-secondary;
-  padding: 18px 100px;
-  width: 100%;
-  margin-top: 20px;
-
-  @media screen and (min-width: 1340px) {
-    font-size: 15px;
-    letter-spacing: 0.9px;
-    padding: 22px 145px;
-    position: absolute;
-    top: -10px;
-    right: 28px;
-    max-width: 390px;
-  }
-  transition: color $normal, border-color $normal;
-  &:hover,
-  &:focus {
-    color: $accent-color;
-    border-color: $accent-color;
-    cursor: pointer;
-  }
-}
 .articles__content {
-  padding: 30px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 960px) {
+    gap: 15px;
+    padding: 20px;
+  }
+  @media screen and (min-width: 1340px) {
+    gap: 20px;
+    padding: 30px;
+  }
 }
-.articles__headline {
+.articles-item__title {
   color: $text-primary;
   font-family: PermianSerifTypeface;
   font-size: 19px;
-  line-height: 110%;
-  letter-spacing: 0.19px;
-  margin-bottom: 15px;
-
   @media screen and (min-width: 960px) {
     font-size: 20px;
   }
-
   @media screen and (min-width: 1340px) {
     font-size: 21px;
-    letter-spacing: 0.21px;
   }
 }
 .articles__desc {
   color: $text-primary;
   font-size: 11px;
   line-height: 140%;
-  margin-bottom: 41px;
-
   @media screen and (min-width: 1340px) {
     font-size: 12px;
   }
 }
 .articles__footer {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -127,15 +112,14 @@
   font-size: 11px;
   font-weight: 700;
   border-bottom: 1px solid $primary-color;
-  line-height: 140%;
-
   @media screen and (min-width: 1340px) {
     font-size: 12px;
   }
-  transition: color $normal;
+  transition: color $normal, border-color $normal;
   &:hover,
   &:focus {
     color: $accent-color;
+    border-color: $accent-color;
   }
 }
 .articles__date {
@@ -143,4 +127,26 @@
   font-size: 12px;
   line-height: 140%;
   opacity: 0.6;
+}
+.articles-more__btn {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 0;
+  background: inherit;
+  border: 1px solid $bg-tertiary;
+  font-size: 13px;
+  color: $text-primary;
+  font-weight: 700;
+  transition: color $normal, border-color $normal;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1340px) {
+    font-size: 15px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
 }
