@@ -43,7 +43,7 @@ export function generateBreadcrumbs() {
       : '/pages/catalog.html';
 
   let breadcrumbHTML = '';
-  let currentPath = '/index.html';
+  let currentPath = '../index.html';
 
   // Головна
   breadcrumbHTML += `<a class="breadcrumbs__link" href="${currentPath}">${
