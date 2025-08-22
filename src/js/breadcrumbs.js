@@ -7,8 +7,10 @@ const FRIENDLY_NAMES = {
   'delivery-and-payment.html': 'Доставка та оплата',
   'about.html': 'Про нас',
   'contacts.html': 'Контакти',
+  'product-card.html': 'Картка товару',
   pages: null,
   catalog: 'Каталог',
+  'G-G-Wood-Fabric': null,
 };
 
 function getFriendlySegmentName(segment) {
@@ -41,7 +43,7 @@ export function generateBreadcrumbs() {
       : '/pages/catalog.html';
 
   let breadcrumbHTML = '';
-  let currentPath = '/';
+  let currentPath = '/index.html';
 
   // Головна
   breadcrumbHTML += `<a class="breadcrumbs__link" href="${currentPath}">${

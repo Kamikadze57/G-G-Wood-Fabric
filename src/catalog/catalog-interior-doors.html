@@ -1,20 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Міжкімнатні двері</title>
-    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../sass/main.scss" />
-  </head>
-  <body>
-    <include src="partials/header.html"></include>
-    <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Міжкімнатні двері</title>
+  <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../sass/main.scss" />
+</head>
+
+<body>
+  <include src="partials/header.html"></include>
+  <main>
+    <div class="container">
+      <nav class="breadcrumbs" breadcrumbs></nav>
+    </div>
+    <section class="showcase">
       <div class="container">
-        <nav class="breadcrumbs" breadcrumbs></nav>
+        <h1 class="title">Міжкімнатні двері</h1>
+        <div class="showcase__box">
+          <aside class="showcase__aside">
+            <ul class="showcase-aside__list">
+              <li class="showcase-aside__item"><a href="../catalog/catalog-interior-doors.html"
+                  class="showcase-aside__link">Міжкімнатні двері</a></li>
+              <li class="showcase-aside__item"><a href="" class="showcase-aside__link">Меблі</a></li>
+              <li class="showcase-aside__item"><a href="" class="showcase-aside__link">Стінові панелі "Баузери"</a></li>
+              <li class="showcase-aside__item"><a href="" class="showcase-aside__link">Сходи</a></li>
+              <li class="showcase-aside__item"><a href="" class="showcase-aside__link">Меблеві фасади</a></li>
+            </ul>
+            <div class="aside-filter">
+              <div class="filter-price">
+                <h2 class="aside__title">Ціновий діапазон</h2>
+                <div class="price__container">
+                  <div class="price__box">
+                    <p class="price__text">Вибрано</p>
+                    <div class="price-text__container">
+                      <p class="price__text price-clear__text" priceClear>очистити</p>
+                      <svg class="price-text__svg">
+                        <use href="../images/icons.svg#close"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="price__box">
+                    <input type="number" class="price__input" inputMin>
+                    <input type="number" class="price__input" inputMax>
+                  </div>
+                </div>
+                <div class="slider__box">
+                  <div class="slider-range__box">
+                    <input type="range" class="slider-range__input min-price__input" minPriceRange min="0" max="1000" value="0">
+                    <div class="slider-track" sliderTrack></div>
+                    <input type="range" class="slider-range__input max-price__input" maxPriceRange min="0" max="1000" value="1000">
+                  </div>
+                  <div class="slider-text__box">
+                    <p class="min-price__text" minPriceText>11</p>
+                    <p class="max-price__text" maxPriceText>11</p>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__box" filterBox></div>
+              <button class="filter-reset__btn" type="button">Скинути фільтр
+                <svg class="reset-btn__svg">
+                  <use href="../images/icons.svg#arrows"></use>
+                </svg>
+              </button>
+            </div>
+          </aside>
+          <ul class="products__list" productsList>
+            <li class="products__item">
+              <h3 class="products__title">Sofia Original 50.07</h3>
+              <p class="products__price">12 800 UAH</p>
+              <img src="../images/index/products-img1.jpg" alt="door" class="products__img" />
+              <a href="../pages/product-card.html" class="products__link">КУПИТИ</a>
+            </li>
+            <li class="products__item">
+              <h3 class="products__title">Sofia Original 50.07</h3>
+              <p class="products__price">12 800 UAH</p>
+              <img src="../images/index/products-img1.jpg" alt="door" class="products__img" />
+              <a href="../pages/product-card.html" class="products__link">КУПИТИ</a>
+            </li>
+            <li class="products__item">
+              <h3 class="products__title">Sofia Original 50.07</h3>
+              <p class="products__price">12 800 UAH</p>
+              <img src="../images/index/products-img1.jpg" alt="door" class="products__img" />
+              <a href="../pages/product-card.html" class="products__link">КУПИТИ</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </main>
-    <include src="partials/footer.html"></include>
-    <script type="module" src="../main.js"></script>
-  </body>
+    </section>
+  </main>
+  <include src="partials/footer.html"></include>
+  <script type="module" src="../js/catalog.js"></script>
+  <script type="module" src="../main.js"></script>
+  <svg class="visually-hidden">
+    <symbol id="dropdown" viewBox="0 0 32 32">
+      <path
+        d="M16.943 19.609c-0.521 0.521-1.365 0.521-1.886 0l-6.667-6.667c-0.521-0.521-0.521-1.365 0-1.886s1.365-0.521 1.886 0l5.724 5.724 5.724-5.724c0.521-0.521 1.365-0.521 1.886 0s0.521 1.365 0 1.886l-6.667 6.667z">
+      </path>
+    </symbol>
+  </svg>
+</body>
+
 </html>

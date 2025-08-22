@@ -1,8 +1,8 @@
 .catalog {
   user-select: none;
+  margin-bottom: 90px;
 }
 .catalog__list {
-  margin-bottom: 90px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 40px;
