@@ -1,0 +1,21 @@
+.payment {
+  margin-bottom: 90px;
+}
+.payment__title {
+  font-weight: 700;
+  font-size: 64px;
+}
+.payment__text {
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.payment__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.payment-item__text {
+  font-weight: 400;
+  font-size: 16px;
+}
