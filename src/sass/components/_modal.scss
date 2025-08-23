@@ -37,7 +37,7 @@
 .visually-hidden {
   display: none;
 }
-.modal__content {
+.product-card__modal {
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -60,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $bg-secondary;
+  background-color: transparent;
   position: absolute;
   top: 110px;
   right: 20px;
@@ -68,6 +68,7 @@
   border: none;
 
   @media screen and (min-width: 480px) {
+  background-color: $bg-secondary;
   top: 80px;
   right: 50px;
   }
@@ -96,8 +97,8 @@
   }
 }
 .product-card__icon {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   color: $text-primary;
   transition: color $normal;
 
@@ -116,10 +117,9 @@
   height: 14px;
   }
 }
-.product-card__title {
+.product-card__title, .gratitude__title {
   color: $text-primary;
   font-family: PermianSerifTypeface;
-  font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.5px;
   
@@ -135,7 +135,7 @@
   font-size: 50px;
   }
 }
-.product-card__headline {
+.product-card__headline, .gratitude__headline {
   margin-top: 16px;
   color: $text-primary;
   font-size: 14px;
@@ -219,7 +219,7 @@
   padding: 20px 23px;
   }
 }
-.gratitude__box {
+.gratitude__modal {
   display: flex;
   flex-direction: column;
   max-width: 620px;
