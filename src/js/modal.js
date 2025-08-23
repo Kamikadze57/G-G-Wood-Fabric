@@ -8,7 +8,8 @@ export function getModal() {
     modalBox: document.querySelector('.gratitude__box'),
   };
 
-  const imgUrl = new URL('../images/modal_img.jpg', import.meta.url).href;
+  // const imgUrl = new URL('../images/modal_img.jpg', import.meta.url).href;
+  // const imgUrl = require('../images/modal__bg.png');
 
   refs.openModalBtn.addEventListener(
     'click',

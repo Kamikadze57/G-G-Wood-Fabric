@@ -132,10 +132,16 @@ const filterContainer = document.querySelector('[filterBox]');
 
 const createFilterItem = filter => {
   const itemsHTML = filter.items
-    .map(item => `<li class="filter-list__item">${item}</li>`)
+    .map(
+      item => 
+      `<li class="filter-list__item">
+        <p class="filter-item__text">${item}</p>
+        <input type="checkbox" class="filter-item__check">
+      </li>`
+    )
     .join('');
   return `
-      <div class="filter__box">
+      <div class="filter-info__box">
         <div class="filter-title__box">
           <h2 class="filter__title">${filter.title}</h2>
           <svg class="filter-title__svg">
