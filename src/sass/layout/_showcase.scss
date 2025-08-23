@@ -28,19 +28,18 @@
 .showcase__list {
   margin: 0 auto 30px;
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 5px;
+  overflow-x: scroll;
 
-  @media screen and (min-width: 1340px) {
-    margin-bottom: 40px;
-  }
+  // @media screen and (min-width: 1340px) {
+  //   margin-bottom: 40px;
+  // }
 }
 .showcase__item {
-  padding: 10px 20px 8px;
+  padding: 12px 29px 10px;
   border: 1px solid $bg-tertiary;
 
   @media screen and (min-width: 1340px) {
-    padding: 10px 54px;
+    padding: 20px 63px 22px;
   }
   transition: border-color $normal;
   &:hover,
