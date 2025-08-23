@@ -1,6 +1,6 @@
 // Змінні для початкових значень ціни
-const INITIAL_MIN_PRICE = 2200;
-const INITIAL_MAX_PRICE = 147500;
+const INITIAL_MIN_PRICE = 10500;
+const INITIAL_MAX_PRICE = 127000;
 
 document.addEventListener('DOMContentLoaded', function () {
   const minRangeInput = document.querySelector('[minPriceRange]');
@@ -135,8 +135,10 @@ const createFilterItem = filter => {
     .map(
       item => 
       `<li class="filter-list__item">
-        <p class="filter-item__text">${item}</p>
-        <input type="checkbox" class="filter-item__check">
+        <label class="filter-item__label" for="${item}">
+          <p class="filter-item__text">${item}</p>
+          <input type="checkbox" id="${item}" class="filter-item__check">
+        </label>
       </li>`
     )
     .join('');

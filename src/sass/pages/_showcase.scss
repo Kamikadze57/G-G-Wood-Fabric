@@ -147,7 +147,7 @@
   flex-direction: column;
   gap: 10px;
 }
-.filter-list__item {
+.filter-item__label {
   display: flex;
   justify-content: space-between;
 }
@@ -157,14 +157,29 @@
   appearance: none;
   border: 2px solid $bg-tertiary;
   background: none;
-  &::-webkit-checkbox {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid $bg-tertiary;
-    background: none;
-    cursor: pointer;
+  cursor: pointer;
+  &:checked {
+    background-color: $text-primary;
+    border: 2px solid $text-primary;
+    background-image: url('../images/check.png');
+    background-position: center;
+    background-repeat: no-repeat;
   }
+}
+.filter-reset__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: inherit;
+  color: $text-tertiary;
+  font-size: 18px;
+  font-weight: 700;
+  fill: $text-tertiary;
+}
+.reset-btn__svg {
+  width: 22px;
+  height: 22px;
 }
 
 // .showcase__list {
