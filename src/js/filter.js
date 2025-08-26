@@ -133,8 +133,8 @@ const filterContainer = document.querySelector('[filterBox]');
 const createFilterItem = filter => {
   const itemsHTML = filter.items
     .map(
-      item => 
-      `<li class="filter-list__item">
+      item =>
+        `<li class="filter-list__item">
         <label class="filter-item__label" for="${item}">
           <p class="filter-item__text">${item}</p>
           <input type="checkbox" id="${item}" class="filter-item__check">

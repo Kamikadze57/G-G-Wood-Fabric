@@ -1,7 +1,7 @@
 [
   {
     "name": "Sofia Original 50.07",
-    "photo": "./images/catalog/interior-doors/Sofia-Original-50.07.png",
+    "photo": "Sofia-Original-50.07",
     "price": "24 500 грн",
     "characteristics": {
       "leaf_width": "800 мм",
@@ -15,7 +15,7 @@
   },
   {
     "name": "VISION Модель 64.43",
-    "photo": "./images/catalog/interior-doors/VISION-64.43.png",
+    "photo": "VISION-64.43",
     "price": "25 100 грн",
     "characteristics": {
       "leaf_width": "700 мм",
@@ -29,7 +29,7 @@
   },
   {
     "name": "VISION Модель 64.44",
-    "photo": "./images/catalog/interior-doors/VISION-64.44.png",
+    "photo": "VISION-64.44",
     "price": "26 000 грн",
     "characteristics": {
       "leaf_width": "900 мм",
@@ -43,7 +43,7 @@
   },
   {
     "name": "SKYLINE Модель 55.21",
-    "photo": "./images/catalog/interior-doors/SKYLINE-55.21.png",
+    "photo": "SKYLINE-55.21",
     "price": "23 900 грн",
     "characteristics": {
       "leaf_width": "800 мм",
@@ -57,7 +57,7 @@
   },
   {
     "name": "SKYLINE Модель 55.23",
-    "photo": "./images/catalog/interior-doors/SKYLINE-55.23.png",
+    "photo": "SKYLINE-55.23",
     "price": "24 200 грн",
     "characteristics": {
       "leaf_width": "600 мм",
@@ -71,7 +71,7 @@
   },
   {
     "name": "VISION Модель 64.45",
-    "photo": "./images/catalog/interior-doors/VISION-64.45.png",
+    "photo": "VISION-64.45",
     "price": "26 150 грн",
     "characteristics": {
       "leaf_width": "900 мм",
@@ -85,7 +85,7 @@
   },
   {
     "name": "CLASSIC Модель 65.44",
-    "photo": "./images/catalog/interior-doors/CLASSIC-65.44.png",
+    "photo": "CLASSIC-65.44",
     "price": "24 800 грн",
     "characteristics": {
       "leaf_width": "700 мм",
@@ -99,7 +99,7 @@
   },
   {
     "name": "CLASSIC Модель 64.22",
-    "photo": "./images/catalog/interior-doors/CLASSIC-64.22.png",
+    "photo": "CLASSIC-64.22",
     "price": "25 300 грн",
     "characteristics": {
       "leaf_width": "800 мм",
@@ -113,7 +113,7 @@
   },
   {
     "name": "METAMORFOSA Модель 65.171",
-    "photo": "./images/catalog/interior-doors/METAMORFOSA-65.171.png",
+    "photo": "METAMORFOSA-65.171",
     "price": "26 500 грн",
     "characteristics": {
       "leaf_width": "600 мм",

@@ -1,11 +1,25 @@
 .catalog {
   user-select: none;
-  margin-bottom: 90px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 960px) {
+    margin-bottom: 70px;
+  }
+  @media screen and (min-width: 1340px) {
+    margin-bottom: 90px;
+  }
 }
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+  }
 }
 .catalog__item {
   background-repeat: no-repeat;
@@ -13,23 +27,35 @@
   background-size: cover;
   &:nth-child(1) {
     background-image: url('../images/catalog/interior-doors.png');
-    grid-column: 1 / span 2;
   }
   &:nth-child(2) {
     background-image: url('../images/catalog/furniture.png');
-    grid-column: 3 / span 2;
   }
   &:nth-child(3) {
     background-image: url('../images/catalog/wall-panels.png');
-    grid-column: 5 / span 2;
   }
   &:nth-child(4) {
     background-image: url('../images/catalog/stairs.png');
-    grid-column: 1 / span 3;
   }
   &:nth-child(5) {
     background-image: url('../images/catalog/furniture-fronts.png');
-    grid-column: 4 / span 3;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(1) {
+      grid-column: 1 / span 2;
+    }
+    &:nth-child(2) {
+      grid-column: 3 / span 2;
+    }
+    &:nth-child(3) {
+      grid-column: 5 / span 2;
+    }
+    &:nth-child(4) {
+      grid-column: 1 / span 3;
+    }
+    &:nth-child(5) {
+      grid-column: 4 / span 3;
+    }
   }
 }
 .catalog-item__link {
@@ -43,7 +69,7 @@
   color: $text-secondary;
   transition: box-shadow $normal;
   &:hover {
-    box-shadow: 3px 3px 10px -1px rgba(21,21,21,0.75);
+    box-shadow: 3px 3px 10px -1px rgba(21, 21, 21, 0.75);
   }
   &::before {
     content: '';

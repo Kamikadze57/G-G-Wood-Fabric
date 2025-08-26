@@ -3,10 +3,11 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
-
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 120px;
   }
 }
 .features__item {

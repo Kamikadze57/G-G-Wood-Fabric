@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const articlesList = document.querySelector('[articlesList]');
 
   if (!articlesList) {
-    console.error('Элемент [articlesList] не найден.');
+    console.error('[articlesList] не знайдено.');
     return;
   }
 

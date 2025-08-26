@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +7,6 @@
   <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon" />
   <link rel="stylesheet" href="../sass/main.scss" />
 </head>
-
 <body>
   <include src="partials/header.html"></include>
   <main>
@@ -66,32 +64,24 @@
               </button>
             </div>
           </aside>
-          <ul class="products__list" productsList>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="../images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="../pages/product-card.html" class="products__link">КУПИТИ</a>
-            </li>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="../images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="../pages/product-card.html" class="products__link">КУПИТИ</a>
-            </li>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="../images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="../pages/product-card.html" class="products__link">КУПИТИ</a>
-            </li>
-          </ul>
+          <div class="showcase-list__box">
+            <ul class="products__list" productsList></ul>
+            <div class="showcase-list__line"></div>
+            <section class="order-doors">
+              <h2 class="order-doors__title">Двері на замовлення</h2>
+              <p class="order-doors__text">Двері, що представляють собою вертикальний прямокутник, які стоять у більшості побудованих квартир, є стандартним зразком. Будь-які інші, що відрізняються за формою і розмірами, вважаються нестандартними і виготовляються на замовлення. Наша компанія пропонує послугу виготовлення міжкімнатних дверей на замовлення з доставкою в Києві та області. Для того щоб визначитися із замовленням, необхідно чітко уявляти можливості виготовлення дверей.</p>
+              <p class="order-doors__text">Виготовляються вони наступним чином: створюється каркас з недорогої деревини, який потім обшивається панелями МДФ. Панелі ламінуються плівкою будь-яких відтінків. Шпоновані варіанти являють собою цілісний натуральний масив з дерева, покритий шпоном з МДФ. Класичні масивні і глухі моделі, і легкі моделі зі склом, можуть бути виготовлені з натурального дерева.</p>
+              <p class="order-doors__text">Якщо Вам необхідна модель з ексклюзивним дизайном, можна зробити її за спеціальним проектом. Незалежно від того, в якій ціновій категорії будуть знаходитися обрані Вами вироби, всі вони виконані з якісного матеріалу, надійні та безпечні.</p>
+            </section>
+          </div>
         </div>
       </div>
     </section>
-  </main>
+    <include src="partials/help.html"></include>
+    </main>
   <include src="partials/footer.html"></include>
-  <script type="module" src="../js/catalog.js"></script>
+  <script type="module" src="../js/filter.js"></script>
+  <script type="module" src="../js/showcase.js"></script>
   <script type="module" src="../main.js"></script>
   <svg class="visually-hidden">
     <symbol id="dropdown" viewBox="0 0 32 32">
@@ -99,5 +89,4 @@
       </symbol>
   </svg>
 </body>
-
 </html>

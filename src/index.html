@@ -110,61 +110,39 @@
       </div>
     </section>
     <section class="showcase">
-      <div class="container showcase__container">
+      <div class="container">
         <h2 class="title">Вітрина товарів</h2>
         <ul class="showcase__list">
           <li class="showcase__item">
-            <a href="" class="showcase__link">МІЖКІМНАТНІ ДВЕРІ</a>
+            <form action="./catalog/catalog-interior-doors.html">
+              <button class="showcase-item__btn" type="submit">МІЖКІМНАТНІ ДВЕРІ</button>
+            </form>
           </li>
           <li class="showcase__item">
-            <a href="" class="showcase__link">МЕБЛІ</a>
+            <form action="./pages/404.html">
+              <button class="showcase-item__btn" type="submit">МЕБЛІ</button>
+            </form>
           </li>
           <li class="showcase__item">
-            <a href="" class="showcase__link">СТІНОВІ ПАНЕЛІ "БАУЗЕРИ"</a>
+            <form action="./pages/404.html">
+              <button class="showcase-item__btn" type="submit">СТІНОВІ ПАНЕЛІ "БАУЗЕРИ"</button>
+            </form>
           </li>
           <li class="showcase__item">
-            <a href="" class="showcase__link">СХОДИ</a>
+            <form action="./pages/404.html">
+              <button class="showcase-item__btn" type="submit">СХОДИ</button>
+            </form>
           </li>
           <li class="showcase__item">
-            <a href="" class="showcase__link">МЕБЛЕВІ ФАСАДИ</a>
+            <form action="./pages/404.html">
+              <button class="showcase-item__btn" type="submit">МЕБЛЕВІ ФАСАДИ</button>
+            </form>
           </li>
         </ul>
-        <div class="products">
-          <ul class="products__list">
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="./images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="./pages/product-card.html" class="products__link">КУПИТИ</a>
-            </li>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="./images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="" class="products__link">КУПИТИ</a>
-            </li>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="./images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="" class="products__link">КУПИТИ</a>
-            </li>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="./images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="" class="products__link">КУПИТИ</a>
-            </li>
-            <li class="products__item">
-              <h3 class="products__title">Sofia Original 50.07</h3>
-              <p class="products__price">12 800 UAH</p>
-              <img src="./images/index/products-img1.jpg" alt="door" class="products__img" />
-              <a href="" class="products__link">КУПИТИ</a>
-            </li>
-            <!-- тут потім будуть інші картки товарів такого формату -->
-          </ul>
-          <button type="button" class="showcase__btn">ПОКАЗАТИ УСЕ</button>
-        </div>
+        <ul class="products__list" productsList></ul>
+        <form action="./catalog/catalog-interior-doors.html" class="showcase__form">
+          <button type="submit" class="more__btn">ПОКАЗАТИ ВСЕ</button>
+        </form>
       </div>
     </section>
     <section class="help">
@@ -280,6 +258,7 @@
       </div>
     </div>
   </footer>
+  <script type="module" src="./js/showcase.js"></script>
   <script type="module" src="./js/articles.js"></script>
   <script type="module" src="./main.js"></script>
 </body>
