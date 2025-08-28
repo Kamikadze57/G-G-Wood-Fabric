@@ -1,68 +1,51 @@
 .help {
-  padding-bottom: 60px;
-
+  margin-bottom: 60px;
   @media screen and (min-width: 1340px) {
-    padding-top: 90px;
-    padding-bottom: 100px;
+    margin: 90px 0 100px;
   }
 }
 .help__container {
   background-color: $bg-secondary;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  align-items: center;
-
-  @media screen and (min-width: 1340px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: row;
-    align-items: normal;
+    gap: 35px;
   }
 }
 .help__img {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
   }
-
-  @media screen and (min-width: 1340px) {
-    width: 80%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
   }
 }
 .help__content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  @media screen and (min-width: 1340px) {
-    align-items: normal;
+  padding: 5px 20px 25px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
   }
 }
 .help__title {
   color: $text-primary;
   font-family: PermianSerifTypeface;
   font-size: 28px;
-  line-height: 100%;
-  letter-spacing: -0.4px;
-  max-width: 280px;
-
+  max-width: 95%;
   @media screen and (min-width: 480px) {
     font-size: 40px;
-    max-width: 400px;
   }
-
   @media screen and (min-width: 768px) {
-    max-width: none;
-    letter-spacing: -0.42px;
+    line-height: 90%;
+    letter-spacing: -1px;
+    max-width: 80%;
+    margin-top: 15px;
   }
-
   @media screen and (min-width: 960px) {
     font-size: 52px;
-    letter-spacing: -0.52px;
+    margin-top: 25px;
   }
-
   @media screen and (min-width: 1340px) {
     font-size: 64px;
-    letter-spacing: -0.64px;
-    margin-top: 90px;
   }
 }
 .help__desc {
@@ -70,21 +53,15 @@
   color: $text-primary;
   font-size: 15px;
   font-weight: 500;
-  line-height: 140%;
-  max-width: 276px;
-
+  line-height: 130%;
   @media screen and (min-width: 480px) {
-    max-width: 395px;
     font-size: 18px;
   }
-
   @media screen and (min-width: 768px) {
-    max-width: none;
+    max-width: 80%;
   }
-
   @media screen and (min-width: 1340px) {
     font-size: 22px;
-    max-width: 420px;
     margin-top: 30px;
   }
 }
@@ -93,74 +70,44 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  @media screen and (min-width: 1340px) {
-    margin-top: 60px;
-    gap: 2px;
+  @media screen and (min-width: 768px) {
+    gap: 20px;
     flex-wrap: wrap;
     flex-direction: row;
-    row-gap: 20px;
+  }
+}
+.help__label {
+  display: flex;
+flex-direction: column;
+  @media screen and (min-width: 768px) {
+    width: 40%;
   }
 }
 .help__input {
-  padding: 17px 60px 20px 23px;
-  border: 2px solid $text-secondary;
-  color: $text-primary;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.17px;
-
-  @media screen and (min-width: 480px) {
-    font-size: 17px;
-    padding: 20px 160px 22px 23px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 18px 400px 20px 21px;
-  }
-
-  @media screen and (min-width: 1340px) {
-    font-size: 18px;
-    letter-spacing: 0.18px;
-    padding: 16px 15px 18px 17px;
-  }
-  transition: color $normal, border-color $normal;
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
-    outline: none;
-    color: $accent-color;
-    cursor: pointer;
-  }
+  font-size: 17px;
+  padding: 16px 18px;
+  outline: none;
+  border: 1px solid #fff;
+  transition: border-color $normal;
+  &::placeholder {
+    color: $text-tertiary;
+    transition: color $normal;
+    }
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      &::placeholder {
+        color: $accent-color;
+      }
+    }
 }
 .help__btn {
-  margin-top: 10px;
-  color: $text-secondary;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.78px;
-  border: 2px solid $accent-color;
-  padding: 15px 36px;
-  margin-bottom: 25px;
-  width: 100%;
-  background-color: $accent-color;
-
-  @media screen and (min-width: 1340px) {
-    font-size: 15px;
-    letter-spacing: 0.9px;
-    margin-bottom: 90px;
-    width: 55%;
-    margin-top: 0;
-  }
-  transition: background-color $normal, color $normal, border-color $normal;
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    color: $accent-color;
-    border-color: $accent-color;
-    cursor: pointer;
-    text-shadow: none;
+  margin-top: 5px;
+  padding: 16px 0;
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    padding: 20px 0;
+    white-space: nowrap;
+    margin-bottom: 30px;
   }
 }

@@ -15,9 +15,23 @@
     </div>
     <section class="showcase">
       <div class="container">
-        <h1 class="title">Міжкімнатні двері</h1>
+        <h1 class="showcase__title title">Міжкімнатні двері</h1>
         <div class="showcase__box">
           <aside class="showcase__aside">
+            <div class="showcase-filter__box">
+              <select name="product" id="prod" class="showcase-filter__select">
+                <option value="interior-doors">Міжкімнатні двері</option>
+                <option value="furniture">Меблі</option>
+                <option value="wall-panels">Стінові панелі "Баузери"</option>
+                <option value="stairs">Сходи</option>
+                <option value="furniture-fronts">Меблеві фасади</option>
+              </select>
+              <button class="showcase-filter__btn" filterMobileBtn>
+                <svg class="showcase-filter__svg">
+                  <use href="../images/icons.svg#filter"></use>
+                </svg>
+              </button>
+            </div>
             <ul class="showcase-aside__list">
               <li class="showcase-aside__item"><a href="../catalog/catalog-interior-doors.html"
                   class="showcase-aside__link">Міжкімнатні двері</a></li>
@@ -26,7 +40,15 @@
               <li class="showcase-aside__item"><a href="" class="showcase-aside__link">Сходи</a></li>
               <li class="showcase-aside__item"><a href="" class="showcase-aside__link">Меблеві фасади</a></li>
             </ul>
-            <div class="aside-filter">
+            <div class="aside-filter" filterMobile>
+              <div class="filter__header">
+                <button class="filter-header__btn" filterMobileBtn>
+                  <svg class="filter-header-btn__svg">
+                    <use href="#dropdown"></use>
+                  </svg>
+                </button>
+                <h2 class="filter-header__title">Фільтрувати</h2>
+              </div>
               <div class="filter-price">
                 <h2 class="aside__title">Ціновий діапазон</h2>
                 <div class="price__container">
@@ -40,15 +62,17 @@
                     </div>
                   </div>
                   <div class="price__box">
-                    <input type="number" class="price__input" inputMin>
-                    <input type="number" class="price__input" inputMax>
+                    <input type="number" class="price__input" name="inputMin" inputMin>
+                    <input type="number" class="price__input" name="inputMax" inputMax>
                   </div>
                 </div>
                 <div class="slider__box">
                   <div class="slider-range__box">
-                    <input type="range" class="slider-range__input min-price__input" minPriceRange min="0" max="1000" value="0">
+                    <input type="range" class="slider-range__input min-price__input" name="sliderMin" minPriceRange min="0" max="1000"
+                      value="0">
                     <div class="slider-track" sliderTrack></div>
-                    <input type="range" class="slider-range__input max-price__input" maxPriceRange min="0" max="1000" value="1000">
+                    <input type="range" class="slider-range__input max-price__input" name="sliderMax" maxPriceRange min="0" max="1000"
+                      value="1000">
                   </div>
                   <div class="slider-text__box">
                     <p class="min-price__text" minPriceText></p>
@@ -69,24 +93,49 @@
             <div class="showcase-list__line"></div>
             <section class="order-doors">
               <h2 class="order-doors__title">Двері на замовлення</h2>
-              <p class="order-doors__text">Двері, що представляють собою вертикальний прямокутник, які стоять у більшості побудованих квартир, є стандартним зразком. Будь-які інші, що відрізняються за формою і розмірами, вважаються нестандартними і виготовляються на замовлення. Наша компанія пропонує послугу виготовлення міжкімнатних дверей на замовлення з доставкою в Києві та області. Для того щоб визначитися із замовленням, необхідно чітко уявляти можливості виготовлення дверей.</p>
-              <p class="order-doors__text">Виготовляються вони наступним чином: створюється каркас з недорогої деревини, який потім обшивається панелями МДФ. Панелі ламінуються плівкою будь-яких відтінків. Шпоновані варіанти являють собою цілісний натуральний масив з дерева, покритий шпоном з МДФ. Класичні масивні і глухі моделі, і легкі моделі зі склом, можуть бути виготовлені з натурального дерева.</p>
-              <p class="order-doors__text">Якщо Вам необхідна модель з ексклюзивним дизайном, можна зробити її за спеціальним проектом. Незалежно від того, в якій ціновій категорії будуть знаходитися обрані Вами вироби, всі вони виконані з якісного матеріалу, надійні та безпечні.</p>
+              <p class="order-doors__text">Двері, що представляють собою вертикальний прямокутник, які стоять у
+                більшості побудованих квартир, є стандартним зразком. Будь-які інші, що відрізняються за формою і
+                розмірами, вважаються нестандартними і виготовляються на замовлення. Наша компанія пропонує послугу
+                виготовлення міжкімнатних дверей на замовлення з доставкою в Києві та області. Для того щоб визначитися
+                із замовленням, необхідно чітко уявляти можливості виготовлення дверей.</p>
+              <p class="order-doors__text">Виготовляються вони наступним чином: створюється каркас з недорогої деревини,
+                який потім обшивається панелями МДФ. Панелі ламінуються плівкою будь-яких відтінків. Шпоновані варіанти
+                являють собою цілісний натуральний масив з дерева, покритий шпоном з МДФ. Класичні масивні і глухі
+                моделі, і легкі моделі зі склом, можуть бути виготовлені з натурального дерева.</p>
+              <p class="order-doors__text">Якщо Вам необхідна модель з ексклюзивним дизайном, можна зробити її за
+                спеціальним проектом. Незалежно від того, в якій ціновій категорії будуть знаходитися обрані Вами
+                вироби, всі вони виконані з якісного матеріалу, надійні та безпечні.</p>
             </section>
           </div>
         </div>
       </div>
     </section>
     <include src="partials/help.html"></include>
-    </main>
+    <div class="showcase-filter__box scroll-filter" scrollFilter>
+      <select name="product" id="scrollprod" class="showcase-filter__select">
+        <option value="interior-doors">Міжкімнатні двері</option>
+        <option value="furniture">Меблі</option>
+        <option value="wall-panels">Стінові панелі "Баузери"</option>
+        <option value="stairs">Сходи</option>
+        <option value="furniture-fronts">Меблеві фасади</option>
+      </select>
+      <button class="showcase-filter__btn" filterMobileBtn>
+        <svg class="showcase-filter__svg">
+          <use href="../images/icons.svg#filter"></use>
+        </svg>
+      </button>
+    </div>
+  </main>
   <include src="partials/footer.html"></include>
   <script type="module" src="../js/filter.js"></script>
   <script type="module" src="../js/showcase.js"></script>
   <script type="module" src="../main.js"></script>
   <svg class="visually-hidden">
     <symbol id="dropdown" viewBox="0 0 32 32">
-      <path d="M0.468 7.786v0c-0.624 0.648-0.624 1.697 0 2.343l13.222 13.701c1.249 1.294 3.275 1.294 4.523 0l13.319-13.8c0.617-0.641 0.625-1.677 0.016-2.326v0c-0.622-0.664-1.647-0.671-2.279-0.018l-12.187 12.63c-0.625 0.648-1.637 0.648-2.262 0l-12.091-12.529c-0.624-0.648-1.636-0.648-2.261 0z"></path>
-      </symbol>
+      <path
+        d="M0.468 7.786v0c-0.624 0.648-0.624 1.697 0 2.343l13.222 13.701c1.249 1.294 3.275 1.294 4.523 0l13.319-13.8c0.617-0.641 0.625-1.677 0.016-2.326v0c-0.622-0.664-1.647-0.671-2.279-0.018l-12.187 12.63c-0.625 0.648-1.637 0.648-2.262 0l-12.091-12.529c-0.624-0.648-1.636-0.648-2.261 0z">
+      </path>
+    </symbol>
   </svg>
 </body>
 </html>

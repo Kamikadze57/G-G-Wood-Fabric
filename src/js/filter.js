@@ -158,3 +158,79 @@ const createFilterItem = filter => {
 };
 const allFiltersHTML = filtersData.map(createFilterItem).join('');
 filterContainer.innerHTML = allFiltersHTML;
+
+
+// Красиве сгортання/розгортання списків фільтрів
+filterContainer.addEventListener('click', event => {
+  const titleBox = event.target.closest('.filter-title__box');
+
+  if (titleBox) {
+    const parentFilterBox = titleBox.closest('.filter-info__box');
+    const filterList = parentFilterBox.querySelector('.filter__list');
+    const filterSvg = titleBox.querySelector('.filter-title__svg');
+    const isHidden = filterList.classList.contains('hidden');
+
+    if (isHidden) {
+      filterList.classList.remove('hidden');
+      filterSvg.classList.remove('rotate');
+      const height = filterList.scrollHeight;
+      filterList.style.maxHeight = `${height}px`;
+    } else {
+      filterList.style.maxHeight = `${filterList.scrollHeight}px`;
+      filterList.offsetHeight;
+
+      filterSvg.classList.add('rotate');
+      filterList.classList.add('hidden');
+      filterList.style.maxHeight = '0';
+    }
+  }
+});
+
+
+// Мобільний фільтр (до 960px)
+const filterMobileBtn = document.querySelectorAll('[filterMobileBtn]');
+const filterMobile = document.querySelector('[filterMobile]');
+
+filterMobileBtn.forEach(btn => {
+  btn.addEventListener('click', toggleFilter);
+});
+
+function toggleFilter() {
+  filterMobile.classList.toggle('open');
+  document.body.classList.toggle('no-scroll');
+}
+
+window.addEventListener('resize', () => {
+  closeOnResize();
+  handleContainerClass();
+});
+function closeOnResize() {
+  if (window.innerWidth > 959 && filterMobile.classList.contains('open')) {
+    filterMobile.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  }
+}
+
+function handleContainerClass() {
+  if (window.innerWidth < 960) {
+    filterMobile.classList.add('container');
+  } else {
+    filterMobile.classList.remove('container');
+  }
+}
+
+handleContainerClass();
+
+
+// Прокрутка сторінки - відображення фільтра (до 960px)
+const scrollFilter = document.querySelector('[scrollFilter]');
+const scrollThreshold = 600; // Порог прокрутки в пікселях
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY;
+  if (currentScroll > scrollThreshold) {
+    scrollFilter.classList.add('scrolled');
+  } else {
+    scrollFilter.classList.remove('scrolled');
+  }
+});
