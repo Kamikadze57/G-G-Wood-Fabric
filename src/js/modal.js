@@ -1,34 +1,49 @@
-// export function getModal() {
-//   const refs = {
-//     openModalBtn: document.querySelector('[data-modal-open]'),
-//     closeModalBtn: document.querySelector('[data-modal-close]'),
-//     modalBackdrop: document.querySelector('[data-modal]'),
-//     orderModalBtn: document.querySelector('[data-modal-btn]'),
+export function getModal() {
+  // Знаходимо всі потрібні елементи DOM і зберігаємо їх у константах для зручності.
+  const openModalBtn = document.querySelector('[data-modal-open]');
+  const closeModalBtn = document.querySelector('[data-modal-close]');
+  const modalBackdrop = document.querySelector('[data-modal]');
+  const orderModalBtn = document.querySelector('[data-modal-btn]');
+  const modalGratitude = document.querySelector('.gratitude__modal');
+  const productCardModal = document.querySelector('.product-card__modal');
 
-//     modalGratitude: document.querySelector('.gratitude__modal'),
-//     productCardModal: document.querySelector('.product-card__modal'),
-//   };
+  // Якщо якогось елемента немає, ми виходимо з функції, щоб уникнути помилок.
+  if (
+    !openModalBtn ||
+    !closeModalBtn ||
+    !modalBackdrop ||
+    !orderModalBtn ||
+    !modalGratitude ||
+    !productCardModal
+  ) {
+    return;
+  }
 
-//   refs.openModalBtn.addEventListener(
-//     'click',
-//     _.debounce(() => {
-//       refs.modalBackdrop.classList.toggle('is-hidden');
-//       refs.closeModalBtn.classList.toggle('visually-hidden');
-//       document.body.classList.toggle('no-scroll');
-//     }, 300)
-//   );
+  // Спільна функція для відкриття та закриття модального вікна.
+  // Вона перемикає класи, які керують видимістю та прокруткою сторінки.
+  const toggleModal = () => {
+    modalBackdrop.classList.toggle('is-hidden');
+    closeModalBtn.classList.toggle('visually-hidden');
+    document.body.classList.toggle('no-scroll');
+  };
 
-//   refs.closeModalBtn.addEventListener('click', () => {
-//     refs.modalBackdrop.classList.toggle('is-hidden');
-//     refs.closeModalBtn.classList.toggle('visually-hidden');
-//     document.body.classList.toggle('no-scroll');
+  // Спільна функція для перемикання між вікнами.
+  // Вона приховує одне вікно і показує інше.
+  const swapModals = () => {
+    productCardModal.classList.toggle('visually-hidden');
+    modalGratitude.classList.toggle('visually-hidden');
+  };
 
-//     refs.productCardModal.classList.remove('visually-hidden');
-//     refs.modalGratitude.classList.add('visually-hidden');
-//   });
-
-//   refs.orderModalBtn.addEventListener('click', () => {
-//     refs.productCardModal.classList.add('visually-hidden');
-//     refs.modalGratitude.classList.remove('visually-hidden');
-//   });
-// }
+  // Додаємо обробники подій до кнопок.
+  // При натисканні на кожну кнопку викликається відповідна функція.
+  openModalBtn.addEventListener('click', toggleModal);
+  closeModalBtn.addEventListener('click', () => {
+    toggleModal();
+    // Додаткова дія при закритті:
+    // Переконуємося, що вікно з подякою приховано, а вікно з продуктом видно.
+    if (modalGratitude.classList.contains('visually-hidden')) {
+      swapModals();
+    }
+  });
+  orderModalBtn.addEventListener('click', swapModals);
+}
