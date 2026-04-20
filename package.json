@@ -1,6 +1,6 @@
 {
   "name": "g-g-wood-fabric",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "",
   "homepage": "https://github.com/Kamikadze57/G-G-Wood-Fabric.git",
   "scripts": {
@@ -19,6 +19,7 @@
     "url": "https://github.com/Kamikadze57/G-G-Wood-Fabric/issues"
   },
   "dependencies": {
+    "leaflet": "^1.9.4",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
